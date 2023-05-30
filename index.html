@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Recursos educativos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Bibliotecas para el mapa de Mèxico-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-map.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+
+  <script src="lib/anychart-data-adapter.min.js"></script>
+  <script src="https://cdn.anychart.com/geodata/2.2.0/countries/mexico/mexico.js"></script>
+  <!--Para el diagrama de Venn-->
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-venn.min.js"></script>
+
+</head>
+
+<body class="app sidebar-mini">
+  <!-- Navbar-->
+  <!--Insertar header-->
+  <header class='app-header'><a class='app-header__logo' href='index.html'><img id="logo" src="images/logo@2x.png"></a>
+    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+      aria-label="Hide Sidebar"></a>
+    <!-- Navbar Right Menu-->
+    <ul class="app-nav">
+      <li class="app-search">
+        <input class="app-search__input" type="search" placeholder="Search">
+        <button class="app-search__button"><i class="fa fa-search"></i></button>
+      </li>
+      <!--Notification Menu-->
+
+      <!-- User Menu-->
+
+      <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu">
+          <div id="google_translate_element" class="google"></div>
+
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
+            }
+          </script>
+
+          <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </a> </li>
+    </ul>
+  </header>
+  <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+  <aside class="app-sidebar">
+    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/usuario.jpg" id="img"
+        alt="User Image">
+      <div>
+        <p class="app-sidebar__user-name">Giner Alor</p>
+        <p class="app-sidebar__user-designation">Administrador</p>
+      </div>
+    </div>
+    <ul class="app-menu">
+      <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span
+            class="app-menu__label">Inicio</span></a></li>
+
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Estudiantes aprobados</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Preguntas acertadas</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Resultados por secci&oacute;n</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Tiempo por secci&oacute;n</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Tiempos de realizaci&oacute;n</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Top 10 en comprensi&oacute;n</span></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+            class="app-menu__label">Top 10 en lectura</span></a></li>
+    </ul>
+  </aside>
+  <main class="app-content">
+    <div class="app-title">
+      <div>
+        <h1><i class="fa fa-dashboard"></i>Anal&iacute;tica de datos en la compresi&oacute;n lectora.</h1>
+        <p>Se presenta un reporte de datos obtenidos del resultados de las pruebas de comprensi&oacute;n lectora.</p>
+      </div>
+      <ul class="app-breadcrumb breadcrumb">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="widget-small primary"><i class="icon fa fa-users fa-3x"></i>
+          <div class="info">
+            <h4>Alumnos</h4>
+            <p><b>1</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="widget-small info"><i class="icon fa fa-users fa-3x"></i>
+          <div class="info">
+            <h4>Profesores</h4>
+            <p><b>2</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="widget-small warning"><i class="icon fa fa-files-o fa-3x"></i>
+          <div class="info">
+            <h4>Cursos</h4>
+            <p><b>3</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="widget-small primary"><i class="icon fa fa-star fa-3x"></i>
+          <div class="info">
+            <h4>Recursos</h4>
+            <p><b>4</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="tile">
+          <h3 class="tile-title">¡Bienvenidos al m&oacute;dulo!</h3>
+          <div class="tile-body"><p class="text-justify">Sean bienvenidos al m&oacute;dulo de anal&iacute;tica de datos
+            para pruebas de compresi&oacute;n lectora. <BR><BR>
+            Tener una buena representaci&oacute;n de los datos es importante y de gran ayuda para poder
+            realizar an&aacute;lisis completo de los mismos de una manera m&aacute;s eficiente.
+            <br><br>
+            En este apartado encontrar&aacute;s los resultados obtenidos en la prueba de
+            comprensi&oacute;n lectora en forma de un resumen estad&iacute;stico con diversas
+            gr&aacute;ficas.
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="tile">
+          <h3 class="tile-title">¿Qu&eacute; es la comprensi&oacute;n lectora?</h3>
+          <div class="tile-body"><p class="text-justify">La comprensión lectora es el proceso cognitivo orientado a
+            entender el significado de un texto. Aprender a leer no es una tarea fácil y
+            requiere por parte de los niños mucho tiempo y práctica. Dominar la lectura
+            significa desarrollar una serie de estrategias que se van perfeccionando a lo
+            largo del tiempo hasta que se consigue leer con fluidez y comprensión. Hay que 
+            aprender a leer con precisión, de forma rápida y con la entonación adecuada.
+          </p></div>
+          <div class="tile-footer"><a class="btn btn-danger"
+              href="https://www.smartick.es/blog/lectura/comprension-lectora/">
+              M&aacute;s informaci&oacute;n</a></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  <!-- Page specific javascripts-->
+  <script type="text/javascript" src="js/plugins/chart.js"></script>
+  <script type="text/javascript" src="js/controladorIndex/controladorMapa.js"></script>
+  <script type="text/javascript" src="js/controladorIndex/controladorVenn.js"></script>
+
+</body>
+
+</html>
