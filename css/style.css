@@ -59,3 +59,76 @@
   max-width: 115px;
   max-height: 100px;
 }
+
+main{
+  margin-top: 60px;
+}
+.item{
+  scroll-margin-top: 10ex;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+#container {
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+#area {
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+#top10barrascomprension{
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+
+#top10barraslectura{
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+#calor{
+  width:100%;
+  height:650px;
+  margin:5px;
+  padding:1px;
+
+}
+#pastel{
+  width:100%;
+  height:650px;
+  margin:5px;
+  padding:1px;
+
+
+}
+#barra3D{
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+#barra3D2{
+  width:100%;
+  height:650px;
+  margin:0px;
+  padding:0%;
+}
+#ResultadosPorSeccion{
+   /* display:flex; */ 
+}
+.app-sidebar__user-designation{
+  font-size: 15px;
+  
+}
+
+
+

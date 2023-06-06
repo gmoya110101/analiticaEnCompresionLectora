@@ -25,6 +25,20 @@
   <!--Para el diagrama de Venn-->
   <script src="https://cdn.anychart.com/releases/v8/js/anychart-venn.min.js"></script>
 
+<!-- Estudiantes aprobados-->
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-timeline.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+<link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+<link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-heatmap.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-cartesian-3d.min.js"></script>
+<!--Termina estudiantes aprobados-->
+
+
+
 </head>
 
 <body class="app sidebar-mini">
@@ -60,7 +74,7 @@
   <!-- Sidebar menu-->
   <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
   <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/usuario.jpg" id="img"
+    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/usuario.png" id="img"
         alt="User Image">
       <div>
         <p class="app-sidebar__user-name">Giner Alor</p>
@@ -68,28 +82,30 @@
       </div>
     </div>
     <ul class="app-menu">
-      <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span
+      <li><a class="app-menu__item" href="#inicio"><i class="app-menu__icon fa fa-dashboard"></i><span
             class="app-menu__label">Inicio</span></a></li>
 
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#estudiantesAprobados"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Estudiantes aprobados</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+
+
+      <li><a class="app-menu__item" href="#preguntasAcertadas"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Preguntas acertadas</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#ResultadosPorSeccion"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Resultados por secci&oacute;n</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#tiempoPorSeccion"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Tiempo por secci&oacute;n</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#tiempoDeRealizacion"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Tiempos de realizaci&oacute;n</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#top10comprension"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Top 10 en comprensi&oacute;n</span></a></li>
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span
+      <li><a class="app-menu__item" href="#top10lectura"><i class="app-menu__icon fa fa-pie-chart"></i><span
             class="app-menu__label">Top 10 en lectura</span></a></li>
     </ul>
   </aside>
   <main class="app-content">
     <div class="app-title">
-      <div>
+      <div class="item" id="inicio">
         <h1><i class="fa fa-dashboard"></i>Anal&iacute;tica de datos en la compresi&oacute;n lectora.</h1>
         <p>Se presenta un reporte de datos obtenidos del resultados de las pruebas de comprensi&oacute;n lectora.</p>
       </div>
@@ -164,9 +180,74 @@
               M&aacute;s informaci&oacute;n</a></div>
         </div>
       </div>
+    </div>
+    <!--Tenemos que modificarlo con el CSS-->
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="item" id="estudiantesAprobados">
+      <h3> Prueba del gráfico estudiantesAprobados</h3>
+     
+      <div id="container"></div>
+
+      <br>
 
     </div>
+
+    <div class="item" id="preguntasAcertadas">
+      <h3> Prueba del gráfico preguntasAcertadas </h3>
+
+      <div id="area"></div>
+
+      <br>
+    </div>
+
+   
+    <div class="item" id="ResultadosPorSeccion">
+       
+      <h3> Prueba del gráfico resultados por sección </h3>
+        <div id="calor"></div>
+        <div id="pastel"></div>
+
+      <br>
+    </div>
+  
+
+
+    <div class="item" id="tiempoPorSeccion">
+      <h3> Prueba del gráfico tiempo por sección </h3>
+
+      <div id="barra3D"></div>
+
+      <br>
+    </div>
+
+    <div class="item" id="tiempoDeRealizacion">
+      <h3> Prueba del gráfico tiempo de realización </h3>
+
+      <div id="barra3D2"></div>
+
+      <br>
+    </div>
+
+    
+
+    <div class="item" id="top10comprension">
+      <h3> Prueba del gráfico top10 compresion </h3>
+
+      <div id="top10barrascomprension"></div>
+
+      <br>
+    </div>
+
+    <div class="item" id="top10lectura">
+      <h3> Prueba del gráfico top10 lectura </h3>
+
+      <div id="top10barraslectura"></div>
+
+      <br>
+    </div>
   </main>
+  
   <!-- Essential javascripts for application to work-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -179,6 +260,15 @@
   <script type="text/javascript" src="js/controladorIndex/controladorMapa.js"></script>
   <script type="text/javascript" src="js/controladorIndex/controladorVenn.js"></script>
 
+  <!--Estudiantes Aprobados js-->
+  <script type="text/javascript" src="js/estudiantesAprobados.js"></script>
+  <script type="text/javascript" src="js/preguntasAcertadas.js"></script>
+  <script type="text/javascript" src="js/top10comprension.js"></script>
+  <script type="text/javascript" src="js/top10lectura.js"></script>
+  <script type="text/javascript" src="js/resultadosPorSeccion.js"></script>
+  <script type="text/javascript" src="js/resultadosPorSeccion2.js"></script>
+  <script type="text/javascript" src="js/tiempoPorSeccion.js"></script>
+  <script type="text/javascript" src="js/tiempoDeRealizacion.js"></script>
 </body>
 
 </html>
