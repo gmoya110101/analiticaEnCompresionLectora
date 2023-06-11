@@ -95,7 +95,7 @@ html{
   margin:0px;
   padding:0%;
 }
-#calor{
+#heatmap, #heatmap2{
   width:100%;
   height:650px;
   margin:5px;

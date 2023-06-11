@@ -1,0 +1,44 @@
+[{
+    "x":"Hombre",
+    "y": "Decodificación",
+    "heat":19
+  },{
+    "x": "Hombre",
+    "y": "Reconocimiento de palabras",
+    "heat": 50
+  },{
+    "x": "Hombre",
+    "y": "Fluidez",
+    "heat": 72
+  },{
+    "x": "Hombre",
+    "y": "Conciencia fonológica",
+    "heat": 98
+  },{
+    "x": "Hombre",
+    "y": "Conocimientos sobre el lenguaje escrito",
+    "heat": 64
+  },
+  {
+    "x":"Mujer",
+    "y": "Decodificación",
+    "heat":15
+  },{
+    "x": "Mujer",
+    "y": "Reconocimiento de palabras",
+    "heat": 55
+  },{
+    "x": "Mujer",
+    "y": "Fluidez",
+    "heat": 84
+  },{
+    "x": "Mujer",
+    "y": "Conciencia fonológica",
+    "heat": 88
+  },{
+    "x": "Mujer",
+    "y": "Conocimientos sobre el lenguaje escrito",
+    "heat": 67
+  }
+  ]
+  

@@ -1,0 +1,127 @@
+[
+    {
+        "x": "Inferencias",
+        "value": 80,
+        "normal": {
+            "fill": "#FC2A19",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "hovered": {
+            "fill": "#19FC84",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "selected": {
+            "fill": "#00AF45",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        }
+    },
+    {
+        "x": "Supervisión de la comprensión",
+        "value": 70,
+        "normal": {
+            "fill": "#E7FC19",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "hovered": {
+            "fill": "#19FC84",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "selected": {
+            "fill": "#00AF45",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        }
+    },
+    {
+        "x": "Estructura del texto",
+        "value": 94,
+        "normal": {
+            "fill": "#31FC19",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "hovered": {
+            "fill": "#19FC84",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "selected": {
+            "fill": "#00AF45",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        }
+    },
+    {
+        "x": "Sintaxis y gramática",
+        "value": 87,
+        "normal": {
+            "fill": "#19F2FC",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "hovered": {
+            "fill": "#19FC84",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "selected": {
+            "fill": "#00AF45",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        }
+    },
+    {
+        "x": "Vocabulario",
+        "value": 96,
+        "normal": {
+            "fill": "#2019FC",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "hovered": {
+            "fill": "#19FC84",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        },
+        "selected": {
+            "fill": "#00AF45",
+            "stroke": null,
+            "label": {
+                "enabled": true
+            }
+        }
+    }
+]

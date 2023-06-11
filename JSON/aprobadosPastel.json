@@ -1,0 +1,51 @@
+[
+    {
+      "0":"Mujeres",
+      "1":"531",
+      "normal": {
+                "fill": "#FC4EAA",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            },
+        "hovered": {
+                "fill": "#F9FC4E",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            },
+         "selected": {
+                "fill": "#FB2929",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            }
+    },
+    {
+      "0":"Hombres",
+      "1": "534",
+      "normal": {
+                "fill": "#000AD8",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            },
+        "hovered": {
+                "fill": "#F9FC4E",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            },
+         "selected": {
+                "fill": "#FF0202",
+                "stroke": null,
+                "label": {
+                    "enabled": true
+                }
+            }
+    }]
