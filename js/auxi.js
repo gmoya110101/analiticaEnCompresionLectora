@@ -1,4 +1,4 @@
-anychart.onDocumentReady(function () {
+  anychart.onDocumentReady(function () {
     // create data set on our data
     var dataSet = anychart.data.set([
       ['Powder', 11861, 10919, 8034, 18012],
