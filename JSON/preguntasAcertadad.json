@@ -1,0 +1,68 @@
+[
+    [
+        "¿Qué es la decodificación?",
+        100,
+        0,
+        100
+    ],
+    [
+        "¿Qué es el reconocimiento de palabras",
+        100,
+        100,
+        100
+    ],
+    [
+        "¿Qué es la fluidez?",
+        100,
+        100,
+        0
+    ],
+    [
+        "¿Qué es la ciencia fonológica?",
+        0,
+        100,
+        0
+    ],
+    [
+        "¿Qué es el conocimiento sobre el lenguaje escrito?",
+        100,
+        50,
+        100
+    ],
+    [
+        "¿Qué es la comprensión del lenguaje?",
+        100,
+        50,
+        50
+    ],
+    [
+        "¿Qué es las interferencias?",
+        50,
+        50,
+        100
+    ],
+    [
+        "¿Qué es la supervisión de la comprensión",
+        0,
+        0,
+        0
+    ],
+    [
+        "¿Qué es la estructura del texto?",
+        50,
+        50,
+        100
+    ],
+    [
+        "¿Qué es la sintaxis y gramática?",
+        100,
+        100,
+        50
+    ],
+    [
+        "¿Qué es vocabulario?",
+        50,
+        100,
+        100
+    ]
+]

@@ -57,22 +57,22 @@ anychart.onDocumentReady(() => {
 
       // create first series with mapped data
       series = chart.bar(firstSeriesData);
-      setupSeries(series, 'Interferencias');
+      setupSeries(series, 'Decodificación');
 
       // create second series with mapped data
       series = chart.bar(secondSeriesData);
-      setupSeries(series, 'Supervision de la comprensión');
+      setupSeries(series, 'Reconocimiento de palabras');
 
       // create third series with mapped data
       series = chart.bar(thirdSeriesData);
-      setupSeries(series, 'Estructura del texto');
+      setupSeries(series, 'Fluidez');
 
       // create fourth series with mapped data
       series = chart.bar(fourthSeriesData);
-      setupSeries(series, 'Sintaxis y gramatica');
+      setupSeries(series, 'Ciencia fonológica');
       // create five series with mapped data
       series = chart.bar(fifthSeriesData);
-      setupSeries(series, 'Vocabulario');
+      setupSeries(series, 'Conocimientos sobre el lenguaje escrito');
 
 
 
@@ -83,7 +83,7 @@ anychart.onDocumentReady(() => {
       chart.tooltip().valuePrefix('calificación: ').displayMode('union');
 
       // set container id for the chart
-      chart.container('top10barrascomprension');
+      chart.container('top10barraslectura');
       // initiate chart drawing
       chart.draw();
     }
