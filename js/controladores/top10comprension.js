@@ -80,7 +80,7 @@ anychart.onDocumentReady(() => {
       chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
       chart.interactivity().hoverMode('by-x');
-      chart.tooltip().valuePrefix('calificación: ').displayMode('union');
+      chart.tooltip().valuePrefix(' ').displayMode('union');
 
       // set container id for the chart
       chart.container('top10barrascomprension');
