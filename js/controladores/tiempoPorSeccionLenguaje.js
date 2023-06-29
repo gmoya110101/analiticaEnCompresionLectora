@@ -1,5 +1,5 @@
 anychart.onDocumentReady(function () {
-  // Creación de un gráfico de área
+  // Creación de un gráfico de barras3D
   anychart.data.loadJsonFile(
     'https://api.npoint.io/2189daeafcccfae8e7a4',
     (data)=>{
