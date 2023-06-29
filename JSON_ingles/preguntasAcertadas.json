@@ -1,0 +1,68 @@
+[
+    [
+        "What is decoding?",
+        100,
+        0,
+        100
+    ],
+    [
+        "What is word recognition?",
+        100,
+        100,
+        100
+    ],
+    [
+        "What is fluency?",
+        100,
+        100,
+        0
+    ],
+    [
+        "What is phonological science?",
+        0,
+        100,
+        0
+    ],
+    [
+        "What is knowledge about written language?",
+        100,
+        50,
+        100
+    ],
+    [
+        "What is language comprehension?",
+        100,
+        50,
+        50
+    ],
+    [
+        "What is interference?",
+        50,
+        50,
+        100
+    ],
+    [
+        "What is monitoring comprehension?",
+        0,
+        0,
+        0
+    ],
+    [
+        "What is the structure of the text?",
+        50,
+        50,
+        100
+    ],
+    [
+        "What is syntax and grammar?",
+        100,
+        100,
+        50
+    ],
+    [
+        "What is vocabulary?",
+        50,
+        100,
+        100
+    ]
+]

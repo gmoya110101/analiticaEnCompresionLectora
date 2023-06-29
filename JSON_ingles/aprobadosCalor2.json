@@ -1,0 +1,52 @@
+[
+    {
+        "x": "Man",
+        "y": "Inferences",
+        "heat": 81
+    },
+    {
+        "x": "Man",
+        "y": "Monitoring comprehension",
+        "heat": 19
+    },
+    {
+        "x": "Man",
+        "y": "text structure",
+        "heat": 37
+    },
+    {
+        "x": "Man",
+        "y": "Syntax and grammar",
+        "heat": 68
+    },
+    {
+        "x": "Man",
+        "y": "Vocabulary",
+        "heat": 90
+    },
+    {
+        "x": "Woman",
+        "y": "Inferences",
+        "heat": 47
+    },
+    {
+        "x": "Woman",
+        "y": "Monitoring comprehension",
+        "heat": 67
+    },
+    {
+        "x": "Woman",
+        "y": "text structure",
+        "heat": 15
+    },
+    {
+        "x": "Woman",
+        "y": "Syntax and grammar",
+        "heat": 88
+    },
+    {
+        "x": "Woman",
+        "y": "Vocabulary",
+        "heat": 100
+    }
+]

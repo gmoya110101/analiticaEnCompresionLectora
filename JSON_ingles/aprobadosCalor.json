@@ -1,0 +1,44 @@
+[{
+    "x":"Man",
+    "y": "Decoding",
+    "heat":19
+  },{
+    "x": "Man",
+    "y": "word recognition",
+    "heat": 50
+  },{
+    "x": "Man",
+    "y": "Fluency",
+    "heat": 72
+  },{
+    "x": "Man",
+    "y": "phonological awareness",
+    "heat": 98
+  },{
+    "x": "Man",
+    "y": "Knowledge of written language",
+    "heat": 64
+  },
+  {
+    "x":"Woman",
+    "y": "Decoding",
+    "heat":15
+  },{
+    "x": "Woman",
+    "y": "word recognition",
+    "heat": 55
+  },{
+    "x": "Woman",
+    "y": "Fluency",
+    "heat": 84
+  },{
+    "x": "Woman",
+    "y": "phonological awareness",
+    "heat": 88
+  },{
+    "x": "Woman",
+    "y": "Knowledge of written language",
+    "heat": 67
+  }
+  ]
+  

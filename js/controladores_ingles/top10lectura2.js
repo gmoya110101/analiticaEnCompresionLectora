@@ -30,10 +30,9 @@ anychart.onDocumentReady(() => {
       chart.animation(true);
 
       chart.padding([10, 40, 5, 20]);
-      //chart.padding([10, 40, 5, 20]);
 
       // set chart title text settings
-      chart.title('Top 10 comprensión');
+      chart.title('Top 10 reading');
 
       // set scale minimum
       chart.yScale().minimum(0);
@@ -56,24 +55,23 @@ anychart.onDocumentReady(() => {
       // temp variable to store series instance
       var series;
 
-      // create first series with mapped data
       series = chart.bar(firstSeriesData);
-      setupSeries(series, 'Interferencias');
+      setupSeries(series, 'decoding');
 
       // create second series with mapped data
       series = chart.bar(secondSeriesData);
-      setupSeries(series, 'Supervision de la comprensión');
+      setupSeries(series, 'word recognition');
 
       // create third series with mapped data
       series = chart.bar(thirdSeriesData);
-      setupSeries(series, 'Estructura del texto');
+      setupSeries(series, 'Fluency');
 
       // create fourth series with mapped data
       series = chart.bar(fourthSeriesData);
-      setupSeries(series, 'Sintaxis y gramatica');
+      setupSeries(series, 'Phonological science');
       // create five series with mapped data
       series = chart.bar(fifthSeriesData);
-      setupSeries(series, 'Vocabulario');
+      setupSeries(series, 'Knowledge of written language');
 
 
 
@@ -81,10 +79,10 @@ anychart.onDocumentReady(() => {
       chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
       chart.interactivity().hoverMode('by-x');
-      chart.tooltip().valuePrefix('calificación: ').displayMode('union');
+      chart.tooltip().valuePrefix('Grade: ').displayMode('union');
 
       // set container id for the chart
-      chart.container('top10barrascomprension');
+      chart.container('top10barraslectura');
       // initiate chart drawing
       chart.draw();
     }

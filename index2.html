@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Educational resources</title>.
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Approved students-->
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-timeline.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css"
+        rel="stylesheet" />
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-heatmap.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-cartesian-3d.min.js"></script>
+    <!--Terminate approved students-->
+</head>
+
+<body class="app sidebar-mini">
+    <!-- Navbar-->
+    <!--Insert header-->
+    <header class="app-header">
+        <a class="app-header__logo" href="index.html"><img id="logo" src="images/logo@2x.png" /></a>
+        <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+            aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+        <ul class="app-nav">
+            <li class="app-search">
+                <input class="app-search__input" type="search" placeholder="Search" />
+                <button class="app-search__button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </li>
+            <!--Notification Menu-->
+
+            <!-- User Menu-->
+
+            <li class="dropdown">
+                <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu">
+                    <div id="google_translate_element" class="google"></div>
+
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement(
+                                {
+                                    pageLanguage: "en",
+                                    includedLanguages: "ca,eu,gl,en,fr,it,pt,de",
+                                    layout:
+                                        google.translate.TranslateElement.InlineLayout.SIMPLE,
+                                    gaTrack: true,
+                                },
+                                "google_translate_element"
+                            );
+                        }
+                    </script>
+
+                    <script type="text/javascript"
+                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user">
+            <img class="app-sidebar__user-avatar" src="images/user.png" id="img" alt="User Image" />
+            <div>
+                <p class="app-sidebar__user-name">Giner Alor</p>
+                <p class="app-sidebar__user-designation">Administrator</p>
+            </div>
+        </div>
+        <ul class="app-menu">
+            <li>
+                <a class="app-menu__item" href="#start"><i class="app-menu__icon fa fa-dashboard"></i><span
+                        class="app-menu__label">Startup</span></span></a>
+            </li>
+
+            <li>
+                <a class="app-menu__item" href="#studentsApproved"><i
+                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Students
+                        approved</span></a>
+            </li>
+
+            <li>
+                <a class="app-menu__item" href="#questionsRight"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Correct questions</span></a>
+            </li>
+            <li>
+                <a class="app-menu__item" href="#ResultbySection"><i
+                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Results by
+                        section</span></span></a>
+            </li>
+            <li>
+                <a class="app-menu__item" href="#timeForSection"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Time by section</span></span></a>
+            </li>
+            <li>
+                <a class="app-menu__item" href="#timeOfPerformance"><i
+                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Times of
+                        realization</span></span></a>
+            </li>
+            <li>
+                <a class="app-menu__item" href="#top10comprehension"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Top 10 in comprehension</span></a>
+            </li>
+            <li>
+                <a class="app-menu__item" href="#top10reading"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Top 10 in reading</span></span></a>
+            </li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        <div class="app-title">
+            <div class="item" id="start"                                                                                              ">
+                <h1>
+                    <i class="fa fa-dashboard"></i>Analysis of data in the
+                    reading comprehension.
+                </h1>
+                <p>
+                    A report is presented on the data obtained from the results of the
+                    reading comprehension                     tests.
+                </p>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                <li class="breadcrumb-item"><a href="index2.html">Home</a></li></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="widget-small primary">
+                    <i class="icon fa fa-users fa-3x"></i>
+                    <div class="info">
+                        <h4>Students</h4>
+                        <p><b>1</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="widget-small info">
+                    <i class="icon fa fa-users fa-3x"></i>
+                    <div class="info">
+                        <h4>Teachers</h4>
+                        <p><b>2</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="widget-small warning">
+                    <i class="icon fa fa-files-o fa-3x"></i>
+                    <div class="info">
+                        <h4>Courses</h4>
+                        <p><b>3</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="widget-small primary">
+                    <i class="icon fa fa-star fa-3x"></i>
+                    <div class="info">
+                        <h4>Resources</h4>
+                        <p><b>4</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tile">
+                    <h3 class="tile-title">Welcome to the module!</h3>
+                    <div class="tile-body">
+                        <p class="text-justify">
+                            Welcome to the data analytics module.
+                            for reading comprehension tests. <br /><br />
+                            Having a good representation of the data is important
+                            and of great help to be able to perform a complete analysis of
+                            more efficiently.
+                            <br /><br />
+                            In this section, you will find the results obtained in
+                            the reading comprehension test in the form of an abstract
+                            statistics with various graphs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="tile">
+                    <h3 class="tile-title">
+                        What is reading comprehension?
+                    </h3>
+                    <div class="tile-body">
+                        <p class="text-justify">
+                            Reading comprehension is the cognitive process oriented towards
+                            understand the meaning of a text. Learning to read is not a
+                            easy task and requires a lot of time and effort on the part of the children.
+                            practice. Mastering reading means developing a series of
+                            strategies that are being refined over time
+                            until it is possible to read with fluency and comprehension. It is necessary to
+                            to learn to read accurately, quickly and with the
+                            proper intonation.
+                        </p>
+                    </div>
+                    <div class="tile-footer">
+                        <a class="btn btn-danger" href="https://www.smartick.es/blog/lectura/comprension-lectora/">
+                            More information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--We have to modify it with the CSS-->.
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <div class="item" id="studentsApproved">
+            <h3>Approved students by gender</h3>
+
+            <div id="pastel"></div>
+            <br />
+        </div>
+
+        <div id="studentsApproved">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tile">
+                        <h3 class="tile-title">Word reading</h3>
+
+                        <div id="heatmap"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tile">
+                        <h3 class="tile-title">Language comprehension</h3>
+
+                        <div id="heatmap2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" id="questionsRight">
+            <h3>Chart quiz correct questions</h3>
+            <div id="area"></div>
+            <br>
+        </div>
+
+        <div class="item" id="ResultbySection2">
+            <h3>______________________</h3>
+            <!--<div id="time"></div></div>-->
+
+            <br />
+        </div>
+        <div class="item" id="ResultbySection3">
+
+            <!--<div id="time"></div></div>-->
+
+            <br />
+        </div>
+
+        <div class="item" id="ResultbySection">
+            <h3>Results of the reading section</h3>
+
+            <div id="barra3D"></div>
+
+            <br />
+        </div>
+
+        <div class="item" id="timeForSection">
+            <h3>Results of the language comprehension section</h3>
+
+            <div id="barra3D2"></div>
+
+            <br />
+        </div>
+        <div class="item" id="timeOfPerformance">
+            <h3>Completion time</h3>
+            <div id="lineadeltiempo"></div>
+            <br>
+        </div>
+
+        <div class="item" id="top10comprehension">
+            <h3>Testing top 10 chart understanding</h3>
+
+            <div id="top10barrascomprension"></div>
+
+            <br />
+        </div>
+
+        <div class="item" id="top10reading">
+            <h3>Test of the top 10 reading graph</h3>
+
+            <div id="top10barraslectura"></div>
+
+            <br />
+        </div>
+    </main>
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+
+    <!--Approved Students js-->
+    <script type="text/javascript" src="js/controladores_ingles/estudiantesAprobados2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/preguntasAcertadas2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/top10comprension2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/top10lectura2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/aprobadosPastel2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/aprobadosCalor.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/aprobadosCalor2.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/tiempoDeRealizacion.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/tiempoPorSeccionComprension.js"></script>
+    <script type="text/javascript" src="js/controladores_ingles/tiempoPorSeccionLenguaje.js"></script>
+</body>
+
+</html>

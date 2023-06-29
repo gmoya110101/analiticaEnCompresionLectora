@@ -1,0 +1,51 @@
+[
+    {
+        "end": "2023/02/04",
+        "fill": "#01b53f",
+        "name": "Alan",
+        "start": "2023/01/22",
+        "stroke": "#01b53f"
+    },
+    {
+        "end": "2023/02/18",
+        "fill": "#1c4598",
+        "name": "Sahady",
+        "start": "2023/02/04",
+        "stroke": "#1c4598"
+    },
+    {
+        "end": "2023/03/22",
+        "fill": "#ff6600",
+        "name": "Elizabeth",
+        "start": "2023/02/18",
+        "stroke": "#ff6600"
+    },
+    {
+        "end": "2023/04/05",
+        "fill": "#00a8e0",
+        "name": "Alfredo",
+        "start": "2023/03/22",
+        "stroke": "#00a8e0"
+    },
+    {
+        "end": "2023/04/19",
+        "fill": "#f6bc16",
+        "name": "Miguel",
+        "start": "2023/04/05",
+        "stroke": "#f6bc16"
+    },
+    {
+        "end": "2023/05/01",
+        "fill": "#e51a23",
+        "name": "Gerardo",
+        "start": "2023/04/19",
+        "stroke": "#e51a23"
+    },
+    {
+        "end": "2023/05/20",
+        "fill": "#e51a23",
+        "name": "Guadalupe",
+        "start": "2023/05/19",
+        "stroke": "#e51a23"
+    }
+]

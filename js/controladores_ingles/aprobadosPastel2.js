@@ -1,7 +1,7 @@
 anychart.onDocumentReady( () => {
 
     anychart.data.loadJsonFile(
-        'https://api.npoint.io/a3cf843195af7508ac89',
+        'https://api.npoint.io/43591752f87787506e05',
          (data) => {
 
             // Crea el gráfico de pastel
@@ -14,11 +14,11 @@ anychart.onDocumentReady( () => {
 
             //Formato de etiquetas
             var tooltip = chart.tooltip();
-            tooltip.title().text("Aprobados");
-            tooltip.format("Género: {%x}\nTotal aprobados: {%value}");
+            tooltip.title().text("Approved");
+            tooltip.format("Género: {%x}\nTotal approved: {%value}");
 
             // Título del gráfico
-            chart.title("Estudiantes aprobados");
+            chart.title("Students approved");
             chart.radius('90%');
 
             // // Id del div
