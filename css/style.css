@@ -70,70 +70,23 @@ main{
 html{
   scroll-behavior: smooth;
 }
-#container {
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-#area {
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-#top10barrascomprension{
+
+
+#top10barrascomprension, #top10barraslectura,
+ #barrasHorizontal, #area, #container, #barra3D,
+ #barra3D2, #preguntasAcertadas, #lineadeltiempo{
   width:100%;
   height:650px;
   margin:0px;
   padding:0%;
 }
 
-#top10barraslectura{
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-#heatmap, #heatmap2{
+#heatmap, #heatmap2, #pastel{
   width:100%;
   height:650px;
   margin:5px;
   padding:0%;
 
-}
-#pastel{
-  width:100%;
-  height:650px;
-  margin:5px;
-  padding:0%;
-
-
-}
-#barra3D{
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-#barra3D2{
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-#preguntasAcertadas{
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
-}
-
-#lineadeltiempo{
-  width:100%;
-  height:650px;
-  margin:0px;
-  padding:0%;
 }
 
 .app-sidebar__user-designation{

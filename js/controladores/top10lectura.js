@@ -32,7 +32,7 @@ anychart.onDocumentReady(() => {
       chart.padding([10, 40, 5, 20]);
 
       // set chart title text settings
-      chart.title('Top 10 comprensión');
+      chart.title('Top 10 lectura');
 
       // set scale minimum
       chart.yScale().minimum(0);
@@ -43,7 +43,7 @@ anychart.onDocumentReady(() => {
 
       // set titles for axises
       chart.xAxis().title('Alumno');
-      chart.yAxis().title('');
+      chart.yAxis().title('Calificaciones');
 
       // helper function to setup label settings for all series
       var setupSeries = (series, name) => {
@@ -73,14 +73,14 @@ anychart.onDocumentReady(() => {
       // create five series with mapped data
       series = chart.bar(fifthSeriesData);
       setupSeries(series, 'Conocimientos sobre el lenguaje escrito');
-
+  
 
 
       // turn on legend
       chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
       chart.interactivity().hoverMode('by-x');
-      chart.tooltip().valuePrefix('calificación: ').displayMode('union');
+      chart.tooltip().valuePrefix(' ').displayMode('union');
 
       // set container id for the chart
       chart.container('top10barraslectura');
