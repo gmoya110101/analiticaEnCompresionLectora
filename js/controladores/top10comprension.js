@@ -57,11 +57,11 @@ anychart.onDocumentReady(() => {
 
       // create first series with mapped data
       series = chart.bar(firstSeriesData);
-      setupSeries(series, 'Interferencias');
+      setupSeries(series, 'Inferencias');
 
       // create second series with mapped data
       series = chart.bar(secondSeriesData);
-      setupSeries(series, 'Supervision de la comprensión');
+      setupSeries(series, 'Supervisión de la comprensión');
 
       // create third series with mapped data
       series = chart.bar(thirdSeriesData);
@@ -69,7 +69,7 @@ anychart.onDocumentReady(() => {
 
       // create fourth series with mapped data
       series = chart.bar(fourthSeriesData);
-      setupSeries(series, 'Sintaxis y gramatica');
+      setupSeries(series, 'Sintaxis y gramática');
       // create five series with mapped data
       series = chart.bar(fifthSeriesData);
       setupSeries(series, 'Vocabulario');
