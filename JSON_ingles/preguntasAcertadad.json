@@ -1,6 +1,6 @@
 [
     {
-        "x": "¿Qué es la decodificación?",
+        "x": "What is decoding?",
         "value": 80,
         "normal": {
             "fill": "#FC2A19",
@@ -25,7 +25,7 @@
         }
     },
     {
-        "x": "¿Qué es el reconocimiento de palabras?",
+        "x": "What is word recognition?",
         "value": 70,
         "normal": {
             "fill": "#E7FC19",
@@ -50,7 +50,7 @@
         }
     },
     {
-        "x": "¿Qué es la fluidez?",
+        "x": "What is fluency?",
         "value": 94,
         "normal": {
             "fill": "#31FC19",
@@ -75,7 +75,7 @@
         }
     },
     {
-        "x": "¿Qué es la conciencia fonológica?",
+        "x": "What is phonological awareness?",
         "value": 87,
         "normal": {
             "fill": "#19F2FC",
@@ -100,7 +100,7 @@
         }
     },
     {
-        "x": "¿Qué es el conocimiento sobre el lenguaje escrito?",
+        "x": "What is knowledge about written language?",
         "value": 96,
         "normal": {
             "fill": "#2019FC",
@@ -125,7 +125,7 @@
         }
     },
     {
-        "x": "¿Qué es la comprensión del lenguaje escrito?",
+        "x": "What is written language comprehension?",
         "value": 77,
         "normal": {
             "fill": "#FA872D",
@@ -150,7 +150,7 @@
         }
     },
     {
-        "x": "¿Qué son las inferencias?",
+        "x": "What are inferences?",
         "value": 96,
         "normal": {
             "fill": "#C2FF12",
@@ -175,7 +175,7 @@
         }
     },
     {
-        "x": "¿Qué es la supervisión de la comprensión?",
+        "x": "What is monitoring comprehension?",
         "value": 69,
         "normal": {
             "fill": "#8C12FF",
@@ -200,7 +200,7 @@
         }
     },
     {
-        "x": "¿Qué es la estructura del texto?",
+        "x": "What is the structure of the text?",
         "value": 96,
         "normal": {
             "fill": "#FA006A",
@@ -225,7 +225,7 @@
         }
     },
     {
-        "x": "¿Qué es la sintaxis y gramática?",
+        "x": "What is syntax and grammar?",
         "value": 59,
         "normal": {
             "fill": "#00FA5F",

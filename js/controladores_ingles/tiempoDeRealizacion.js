@@ -43,12 +43,12 @@ anychart.onDocumentReady(function () {
 // Función de los eventos 
 function eventsData() {
   return [
-      ['2023/01/25', 'Primera evaluación'],
-      ['2023/02/15', 'Segunda evaluación'],
-      ['2023/03/09', 'Tercera evaluación'],
-      ['2023/03/14', 'Cuarta evaluación'],
-      ['2023/03/19', 'Quinta evaluación'],
-      ['2023/04/08', 'Primera evaluación 2° OP'],
-      ['2023/04/26', 'Segunda evaluación 2° OP']
+    ['2023/01/25', 'First evaluación'],
+    ['2023/02/15', 'Second evaluación'],
+    ['2023/03/09', 'Third evaluación'],
+    ['2023/03/14', 'Quarter evaluación'],
+    ['2023/03/19', 'Fifth evaluación'],
+    ['2023/04/08', 'First evaluación 2° OP'],
+    ['2023/04/26', 'Second evaluación 2° OP']
   ];
 }

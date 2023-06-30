@@ -10,6 +10,7 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleidioma.css" />
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -32,21 +33,17 @@
     <!-- Navbar-->
     <!--Insert header-->
     <header class="app-header">
-        <a class="app-header__logo" href="index.html"><img id="logo" src="images/logo@2x.png" /></a>
+        <a class="app-header__logo" href="index2.html"><img id="logo" src="images/logo@2x.png" /></a>
         <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
             aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
         <ul class="app-nav">
             <li class="app-search">
-                <input class="app-search__input" type="search" placeholder="Search" />
+                <input class="app-search__input" type="search" placeholder="Buscar" />
                 <button class="app-search__button">
                     <i class="fa fa-search"></i>
                 </button>
             </li>
-            <!--Notification Menu-->
-
-            <!-- User Menu-->
-
             <li class="dropdown">
                 <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu">
                     <div id="google_translate_element" class="google"></div>
@@ -65,9 +62,6 @@
                             );
                         }
                     </script>
-
-                    <script type="text/javascript"
-                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                 </a>
             </li>
         </ul>
@@ -76,7 +70,7 @@
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
         <div class="app-sidebar__user">
-            <img class="app-sidebar__user-avatar" src="images/user.png" id="img" alt="User Image" />
+            <img class="app-sidebar__user-avatar" src="images/usuario.png" id="img" alt="User Image" />
             <div>
                 <p class="app-sidebar__user-name">Giner Alor</p>
                 <p class="app-sidebar__user-designation">Administrator</p>
@@ -85,13 +79,12 @@
         <ul class="app-menu">
             <li>
                 <a class="app-menu__item" href="#start"><i class="app-menu__icon fa fa-dashboard"></i><span
-                        class="app-menu__label">Startup</span></span></a>
+                        class="app-menu__label">Start</span></span></a>
             </li>
 
             <li>
-                <a class="app-menu__item" href="#studentsApproved"><i
-                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Students
-                        approved</span></a>
+                <a class="app-menu__item" href="#studentsApproved"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Students approved</span></a>
             </li>
 
             <li>
@@ -99,18 +92,16 @@
                         class="app-menu__label">Correct questions</span></a>
             </li>
             <li>
-                <a class="app-menu__item" href="#ResultbySection"><i
-                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Results by
-                        section</span></span></a>
+                <a class="app-menu__item" href="#ResultbySection"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Results by section</span></span></a>
             </li>
             <li>
                 <a class="app-menu__item" href="#timeForSection"><i class="app-menu__icon fa fa-pie-chart"></i><span
                         class="app-menu__label">Time by section</span></span></a>
             </li>
             <li>
-                <a class="app-menu__item" href="#timeOfPerformance"><i
-                        class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Times of
-                        realization</span></span></a>
+                <a class="app-menu__item" href="#timeOfPerformance"><i class="app-menu__icon fa fa-pie-chart"></i><span
+                        class="app-menu__label">Times of realization</span></span></a>
             </li>
             <li>
                 <a class="app-menu__item" href="#top10comprehension"><i class="app-menu__icon fa fa-pie-chart"></i><span
@@ -124,19 +115,25 @@
     </aside>
     <main class="app-content">
         <div class="app-title">
-            <div class="item" id="start"                                                                                              ">
+            <div class="item" id="start">
                 <h1>
-                    <i class="fa fa-dashboard"></i>Analysis of data in the
+                    <i class=" fa fa-dashboard"></i>Analysis of data in the
                     reading comprehension.
                 </h1>
-                <p>
-                    A report is presented on the data obtained from the results of the
-                    reading comprehension                     tests.
-                </p>
+                <p> A report is presented on the data obtained from the results of the
+                    reading comprehension tests. </p>
             </div>
+            <span class="es">Spanish</span>
+            <input type="checkbox" class="check" checked>
+            <span class="en">English</span>
+
+
+            <script src="js/controladorIdioma/idioma.js"></script>
+
             <ul class="app-breadcrumb breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item"><a href="index2.html">Home</a></li></li>
+                <li class="breadcrumb-item"><a href="index2.html">Home</a></li>
+                </li>
             </ul>
         </div>
         <div class="row">
@@ -222,7 +219,7 @@
             </div>
         </div>
         <!--We have to modify it with the CSS-->.
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br />
 
         <div class="item" id="studentsApproved">
             <h3>Approved students by gender</h3>
@@ -252,7 +249,7 @@
 
         <div class="item" id="questionsRight">
             <h3>Chart quiz correct questions</h3>
-            <div id="area"></div>
+            <div id="barrasHorizontal"></div>
             <br>
         </div>
 
