@@ -15,7 +15,7 @@ anychart.onDocumentReady( () => {
             //Formato de etiquetas
             var tooltip = chart.tooltip();
             tooltip.title().text("Approved");
-            tooltip.format("Género: {%x}\nTotal approved: {%value}");
+            tooltip.format("Gender: {%x}\nTotal approved: {%value}");
 
             // Título del gráfico
             chart.title("Students approved");

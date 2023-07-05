@@ -1,3 +1,4 @@
+
 anychart.onDocumentReady(function () {
   // Creación de un gráfico de barras3D
   anychart.data.loadJsonFile(
@@ -8,7 +9,7 @@ anychart.onDocumentReady(function () {
 
 // create a bar series and set the data
 var series = chart.bar(data);
-series.name('Resultado');
+series.name('Result');
 
 // set the container id
 chart.container("barrasHorizontal");

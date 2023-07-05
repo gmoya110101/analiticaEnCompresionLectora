@@ -5,8 +5,8 @@ anychart.onDocumentReady(function () {
      (data) => {
   // create data set on our data
   var chartData = {
-    title: 'Preguntas acertadas',
-    header: ['#', 'Alan Velasco', 'Gerardo Moya', 'Leslie Rojas'],
+    title: 'Tiempo de Preguntas acertadas',
+    header: ['#', 'Alan Velasco ', 'Gerardo Moya', 'Leslie Rojas'],
     rows: getData(data)
   };
 
@@ -22,9 +22,10 @@ anychart.onDocumentReady(function () {
   // set interactivity and tooltips settings
   chart.interactivity().hoverMode('by-x');
   chart.tooltip().displayMode('union');
+  
 
   chart.yAxis().title('Rango');
-  chart.yAxis().labels().format('{%Value}');
+  chart.yAxis().labels().format('{%Value} segundos');
 
   // turn on legend
   chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
