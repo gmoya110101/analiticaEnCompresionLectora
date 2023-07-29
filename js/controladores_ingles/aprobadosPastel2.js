@@ -18,7 +18,7 @@ anychart.onDocumentReady( () => {
             tooltip.format("Gender: {%x}\nTotal approved: {%value}");
 
             // Título del gráfico
-            chart.title("Students approved");
+            chart.title("Students approved by gender");
             chart.radius('90%');
 
             // // Id del div

@@ -7,7 +7,7 @@ anychart.onDocumentReady(function () {
             // Poner el tipo de gráfico
             var chart = anychart.heatMap(data);
             //Titulo
-            chart.title("Approved students in the word reading section");
+            //chart.title("Approved students in the word reading section");
             // Creación de la escala de colores
             var colorScale = anychart.scales.ordinalColor();
             // Parámetros de los rangos

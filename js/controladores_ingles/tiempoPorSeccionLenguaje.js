@@ -6,7 +6,7 @@ anychart.onDocumentReady(function () {
        
         const chart = anychart.column3d(data);
         
-      chart.title('Word Reading Section Grades');
+      chart.title('Grades of the word reading section');
   
         chart.animation(true);
         //Título y formato del eje Y

@@ -7,7 +7,7 @@ anychart.onDocumentReady(function () {
           // Crea el gráfico de línea del tiempo
           var chart = anychart.timeline();
 
-          chart.title('Realization time');
+         // chart.title('Realization time');
 
           // Carga los datos
           var rangeSeries = chart.range(data);

@@ -33,7 +33,7 @@ anychart.onDocumentReady(() => {
         //chart.padding([10, 40, 5, 20]);
   
         // set chart title text settings
-        chart.title('Top 10 comprehension');
+        //chart.title('Top 10 comprehension');
   
         // set scale minimum
         chart.yScale().minimum(0);

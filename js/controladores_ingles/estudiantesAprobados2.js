@@ -1,11 +1,11 @@
 anychart.onDocumentReady(function () {
 
   anychart.data.loadJsonFile(
-    'https://api.npoint.io/b64b88fa6bb0b974ead5',
+    'https://api.npoint.io/2543e4298e748b473001',
      (data) => {
   // create data set on our data
   var chartData = {
-    title: 'Tiempo de Preguntas acertadas',
+    title: 'Grades of the language comprehension section ',
     header: ['#', 'Alan Velasco ', 'Gerardo Moya', 'Leslie Rojas'],
     rows: getData(data)
   };
@@ -24,7 +24,7 @@ anychart.onDocumentReady(function () {
   chart.tooltip().displayMode('union');
   
 
-  chart.yAxis().title('Rango');
+  chart.yAxis().title('Time');
   chart.yAxis().labels().format('{%Value} seconds');
 
   // turn on legend
