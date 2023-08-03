@@ -6,14 +6,14 @@ anychart.onDocumentReady(function () {
 
         chart = anychart.bar();
 
-// create a bar series and set the data
-var series = chart.bar(data);
-series.name('Resultado');
+    // Crea la varibale series donde se le asigana el gráfico 
+    var series = chart.bar(data);
+    series.name('Resultado');
 
-// set the container id
-chart.container("barrasHorizontal");
+    // Contenedor
+    chart.container("barrasHorizontal");
 
-// initiate drawing the chart
-chart.draw();
-      }
-    )});
+    // Inicializa el gráfico
+    chart.draw();
+          }
+        )});

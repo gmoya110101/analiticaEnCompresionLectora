@@ -1,5 +1,5 @@
 anychart.onDocumentReady(() => {
-  // create data set on our data
+
   anychart.data.loadJsonFile(
     'https://api.npoint.io/fcd6767da78ee0d2aa2d',
 
@@ -7,83 +7,70 @@ anychart.onDocumentReady(() => {
 
       var dataSet = anychart.data.set(data);
 
-      // map data for the first series, take x from the zero column and value from the first column of data set
+     //Intervalos para los datos
       var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
 
-      // map data for the second series, take x from the zero column and value from the second column of data set
       var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
 
-      // map data for the third series, take x from the zero column and value from the third column of data set
       var thirdSeriesData = dataSet.mapAs({ x: 0, value: 3 });
 
-      // map data for the fourth series, take x from the zero column and value from the fourth column of data set
       var fourthSeriesData = dataSet.mapAs({ x: 0, value: 4 });
 
-      // map data for the fourth series, take x from the zero column and value from the fourth column of data set
       var fifthSeriesData = dataSet.mapAs({ x: 0, value: 5 });
 
 
-      // create bar chart
+      // Crea el gráfico de barras
       var chart = anychart.bar();
-
-      // turn on chart animation
-      chart.animation(true);
 
       chart.padding([10, 40, 5, 20]);
 
-      // set chart title text settings
-      chart.title('Top 10 reading');
 
-      // set scale minimum
+      // Escala mínima
       chart.yScale().minimum(0);
 
-      // force chart to stack values by Y scale.
+      // Forza el gráfico a apilar los valores en el eje Y
       chart.yScale().stackMode('value');
       chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
 
-      // set titles for axises
+      // Titulos de los ejes
       chart.xAxis().title('Alumno');
       chart.yAxis().title('');
 
-      // helper function to setup label settings for all series
+      // Función auxiliar para asignar los nombres a las etiquetas
       var setupSeries = (series, name) => {
         series.name(name);
         series.stroke('3 #fff 1');
         series.hovered().stroke('3 #fff 1');
       };
 
-      // temp variable to store series instance
+       // Varible temporal para almacenar la instancia de las series de datos
       var series;
 
       series = chart.bar(firstSeriesData);
       setupSeries(series, 'decoding');
 
-      // create second series with mapped data
+      // crea los intervalos de datos
       series = chart.bar(secondSeriesData);
       setupSeries(series, 'word recognition');
 
-      // create third series with mapped data
       series = chart.bar(thirdSeriesData);
       setupSeries(series, 'Fluency');
 
-      // create fourth series with mapped data
       series = chart.bar(fourthSeriesData);
       setupSeries(series, 'Phonological science');
-      // create five series with mapped data
+
       series = chart.bar(fifthSeriesData);
       setupSeries(series, 'Knowledge of written language');
 
-
-
-      // turn on legend
+      // Habilita las leyendas
       chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
       chart.interactivity().hoverMode('by-x');
       chart.tooltip().valuePrefix('Grade: ').displayMode('union');
 
-      // set container id for the chart
+      // Contenedor HTML
       chart.container('top10barraslectura');
-      // initiate chart drawing
+      //Inicializa el gráfico
       chart.draw();
     }
   );

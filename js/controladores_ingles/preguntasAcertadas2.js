@@ -7,14 +7,14 @@ anychart.onDocumentReady(function () {
 
       chart = anychart.bar();
 
-// create a bar series and set the data
+// Crea el gráfico de barras y le inserta los datos
 var series = chart.bar(data);
 series.name('Result');
 
-// set the container id
+  // Contenedor HTML
 chart.container("barrasHorizontal");
 
-// initiate drawing the chart
+// Inicializa el gráfico
 chart.draw();
     }
   )});

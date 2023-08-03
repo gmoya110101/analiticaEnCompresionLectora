@@ -6,7 +6,7 @@ anychart.onDocumentReady(function () {
      
       const chart = anychart.column3d(data);
       
-    chart.title('Calificaciones de la sección de lectura de palabras');
+    chart.title('Resultado de la sección de lectura de palabras');
 
       chart.animation(true);
       //Título y formato del eje Y

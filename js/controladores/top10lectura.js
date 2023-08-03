@@ -7,84 +7,69 @@ anychart.onDocumentReady(() => {
 
       var dataSet = anychart.data.set(data);
 
-      // map data for the first series, take x from the zero column and value from the first column of data set
+       //Intervalos para los datos
       var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
 
-      // map data for the second series, take x from the zero column and value from the second column of data set
       var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
 
-      // map data for the third series, take x from the zero column and value from the third column of data set
       var thirdSeriesData = dataSet.mapAs({ x: 0, value: 3 });
 
-      // map data for the fourth series, take x from the zero column and value from the fourth column of data set
       var fourthSeriesData = dataSet.mapAs({ x: 0, value: 4 });
 
-      // map data for the fourth series, take x from the zero column and value from the fourth column of data set
       var fifthSeriesData = dataSet.mapAs({ x: 0, value: 5 });
 
 
-      // create bar chart
+      // Inicializa el gráfico
       var chart = anychart.bar();
-
-      // turn on chart animation
-      chart.animation(true);
 
       chart.padding([10, 40, 5, 20]);
 
-      // set chart title text settings
-      chart.title('Top 10 lectura');
-
-      // set scale minimum
+      // Escala mínima del gráfico
       chart.yScale().minimum(0);
 
-      // force chart to stack values by Y scale.
+      // Forza el gráfico a apilar los valores en el eje Y
       chart.yScale().stackMode('value');
       chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
 
-      // set titles for axises
+      // Títulos de los ejes
       chart.xAxis().title('Alumno');
       chart.yAxis().title('Calificaciones');
 
-      // helper function to setup label settings for all series
+       // Función auxiliar para asignar los nombres a las etiquetas
       var setupSeries = (series, name) => {
         series.name(name);
         series.stroke('3 #fff 1');
         series.hovered().stroke('3 #fff 1');
       };
 
-      // temp variable to store series instance
+       // Varible temporal para almacenar la instancia de las series de datos
       var series;
 
-      // create first series with mapped data
+      // crea los intervalos de datos
       series = chart.bar(firstSeriesData);
       setupSeries(series, 'Decodificación');
 
-      // create second series with mapped data
       series = chart.bar(secondSeriesData);
       setupSeries(series, 'Reconocimiento de palabras');
-
-      // create third series with mapped data
+    
       series = chart.bar(thirdSeriesData);
       setupSeries(series, 'Fluidez');
 
-      // create fourth series with mapped data
       series = chart.bar(fourthSeriesData);
       setupSeries(series, 'Ciencia fonológica');
-      // create five series with mapped data
+    
       series = chart.bar(fifthSeriesData);
       setupSeries(series, 'Conocimientos sobre el lenguaje escrito');
   
-
-
-      // turn on legend
+      // Habilita las leyendas
       chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
       chart.interactivity().hoverMode('by-x');
       chart.tooltip().valuePrefix(' ').displayMode('union');
 
-      // set container id for the chart
+      // Contenedor HTML
       chart.container('top10barraslectura');
-      // initiate chart drawing
+      // Inicializa el gráfico
       chart.draw();
     }
   );

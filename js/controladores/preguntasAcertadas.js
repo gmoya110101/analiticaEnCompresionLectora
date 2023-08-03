@@ -3,23 +3,20 @@ anychart.onDocumentReady(function () {
   anychart.data.loadJsonFile(
     'https://api.npoint.io/b64b88fa6bb0b974ead5',
      (data) => {
-  // create data set on our data
+  // Crear formato de datos e inserción de los datos del JSON
   var chartData = {
-    title: 'Tiempo de Preguntas acertadas',
+    title: 'Tiempo promedio de la sección de lectura',
     header: ['#', 'Alan Velasco ', 'Gerardo Moya', 'Leslie Rojas'],
     rows: getData(data)
   };
 
-  // create area chart
+  // Crea el gráfico
   var chart = anychart.area3d();
 
-  // set chart data
+  // Inserta los datos
   chart.data(chartData);
 
-  // turn on chart animation
-  chart.animation(true);
-
-  // set interactivity and tooltips settings
+  // Interactividad y tooltip
   chart.interactivity().hoverMode('by-x');
   chart.tooltip().displayMode('union');
   
@@ -27,16 +24,16 @@ anychart.onDocumentReady(function () {
   chart.yAxis().title('Rango');
   chart.yAxis().labels().format('{%Value} segundos');
 
-  // turn on legend
+  // Habilita las etiquetas
   chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
 
-  // set 3D settings
+  // Características del gráfico en  3D
   chart.zAspect('35%').zPadding(0).zAngle(20);
 
-  // set container id for the chart
+  // Contenedor HTML
   chart.container('area');
 
-  // initiate chart drawing
+  // Inicializa el gráfico
   chart.draw();
 }
   );

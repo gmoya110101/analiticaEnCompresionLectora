@@ -7,7 +7,7 @@ anychart.onDocumentReady(function () {
        
         const chart = anychart.column3d(data);
         
-      chart.title('Calificaciones de la sección de comprensión del lenguaje');
+      chart.title('Resultado de la sección de comprensión del lenguaje');
   
         chart.animation(true);
         //Título y formato del eje Y
